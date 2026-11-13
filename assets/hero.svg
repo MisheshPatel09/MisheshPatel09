@@ -26,26 +26,10 @@
   <!-- Portfolio bg-grid overlay -->
   <rect width="1200" height="600" fill="url(#grid)"/>
 
-  <!-- Portfolio Navbar Header -->
+  <!-- Portfolio Navbar Header (Get in touch and Location removed) -->
   <g transform="translate(60, 48)">
-    <!-- Name & Title on Left (exact from portfolio: font-bold Mishesh Patel, mt-1 font-normal AI/ML Developer) -->
     <text x="0" y="24" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">Mishesh Patel</text>
     <text x="0" y="52" font-size="18" font-weight="400" fill="#ffffff" opacity="0.85" letter-spacing="-0.015em">AI/ML Developer</text>
-
-    <!-- Location Pill -->
-    <g transform="translate(195, 3)">
-      <rect x="0" y="0" width="138" height="28" rx="14" fill="#ffffff" opacity="0.15"/>
-      <circle cx="16" cy="14" r="4" fill="#17b26a"/>
-      <text x="28" y="19" font-size="12" font-weight="600" fill="#ffffff">Gujarat, India</text>
-    </g>
-
-    <!-- Get in touch button on Right (exact from portfolio button) -->
-    <g transform="translate(930, 2)">
-      <rect x="0" y="0" width="150" height="38" rx="19" fill="#ffffff" opacity="0.15" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.35"/>
-      <text x="24" y="24" font-size="14" font-weight="600" fill="#ffffff">Get in touch</text>
-      <!-- Arrow icon -->
-      <path d="M115 15 L125 25 M125 15 L125 25 L115 25" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(2, -3) rotate(-45 120 20)"/>
-    </g>
   </g>
 
   <!-- Big Hero Headline (exact from portfolio: "I build intelligence into systems.") -->

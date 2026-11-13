@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="Thanks for scrolling! Write me anytime at misheshpatel.vercel.app">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap');
+  text { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
+  .wave { transform-origin: 1044px 248px; animation: wave 3s ease-in-out infinite; }
+  @keyframes wave { 0%,70%,100%{transform:rotate(0)} 10%,30%{transform:rotate(14deg)} 20%,40%{transform:rotate(-8deg)} 50%{transform:rotate(4deg)} }
+  .sea { animation: sea 3s ease-in-out infinite; }
+  @keyframes sea { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+  @media (prefers-reduced-motion:reduce){ *{animation:none!important} }
+</style>
+<defs>
+  <clipPath id="fcard"><rect width="1200" height="240" rx="24"/></clipPath>
+</defs>
+<g clip-path="url(#fcard)">
+  <!-- Vibrant Blue Background -->
+  <rect width="1200" height="240" fill="#2261e9"/>
+
+  <!-- Animated Sea Waves -->
+  <path class="sea" style="animation-delay:-0.42s" d="M123 176q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-1.95s" d="M301 176q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-1.20s" d="M451 176q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-0.87s" d="M658 176q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-0.18s" d="M798 176q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-1.61s" d="M73 204q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-2.34s" d="M207 204q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-0.32s" d="M392 204q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-2.83s" d="M503 204q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-2.49s" d="M641 204q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+  <path class="sea" style="animation-delay:-0.78s" d="M841 204q12 -9 24 0" fill="none" stroke="#fbfbf8" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
+
+  <!-- Footer Text -->
+  <text x="56" y="104" font-size="52" font-weight="800" fill="#fbfbf8" letter-spacing="-1">Thanks for scrolling!</text>
+  <text x="58" y="152" font-size="20" font-weight="700" fill="#fbfbf8" opacity=".9">Write me anytime at <tspan fill="#bef264">misheshpatel.vercel.app</tspan></text>
+
+  <!-- Waving Hand -->
+  <g class="wave">
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABgCAYAAACDgFV6AAACqklEQVR42u2dPU8DMQxAU0QlJBg68P9/IUMHKiF1KFMkFJHmy3ac3Mt2HNdD7es7x3bCKQiN+/3n8d/Pz+e307Pr3t8/HiGEcL1+Vf2+9/ESGKLjpEVmidTe6yD0YONV+gUvl8/w14kpkfF86/UQikN1HTo6VnEphM5yaEpiJKbkPKnzOBSHznXkLi6FUCuH5si0cmY8v1pcCqFWDtV2Z3Rh7TeBOBRCw9O5d85ptcdxpC7sdaZXYiF0lTi09elcciqEQmioqvmMxplBON/qjVQI9RqHzprRQOhR5vK1M5bWuHF07l46jo6/3b5VSE2fIbm/P94fQrUc6i3vOdulve8HhEo7NP0krPOdUs61GiWnQygO1XXo6PsAodo1pdG4UPr1WvOt1s7EodZz+d5q59EdGu8PodqEtuY/vZLcSuxoDY25PL1NOqSO1szSLBeEeqspWdeQes+nJNWSWXImMyUcattTNepkCJ21CiQXp82uy0vfv/SMgFDvhB59QKj3lXTSvU7Wdf3R6yF0lbWepY6K1Udvlx+EeluNLB0FeHNqa14VQncn1JtDW7v6IDQ433NkthOl6vq9/aYQikN1O0BGO6EhdNV9m7w6VbrzGUJxaFDNb+Z2/4HQ1R0aP8nWOv7s41LWrHUdFIR6dehsl1p1/ZGxX51QrT1LpHr+qctDqE3NaVaHCoTuQmhvf6m0I6XuRxy6K6FSndDSztTKj0LoqoTmiA3JnnjacWRpbSgZewi1iVtbHS2VuYfQ3Qit3RdptM5uVXOC0F0Ilc6baldb6Q8Nm/Y2leJPqThSO78av1Fkm3Z36OgqYKue/l6nQujqhNZmnXKOTFcTz65ZpaRC6C4OrXVk7f8DnbV6BEKPkg8NlflIr71T7Nu0ez7UemcJ6fPsfac0fgEzlXWiks3MeAAAAABJRU5ErkJggg==" x="960" y="64" width="168" height="192" style="image-rendering:pixelated"/>
+  </g>
+</g>
+</svg>

@@ -1,108 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="Mishesh Patel, AI/ML developer based in Gujarat, India. I build intelligent systems that scale.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="Mishesh Patel — AI/ML Developer. I build intelligence into systems.">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;family=Fira+Code:wght@500;700&amp;display=swap');
-  text { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; }
-  .code { font-family: 'Fira Code', monospace; }
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+  text { font-family: 'Outfit', system-ui, -apple-system, sans-serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
   .bounce { animation: bounce 3s cubic-bezier(.3,0,.2,1) infinite; }
   @keyframes bounce { 0%,30%,100%{transform:translateY(0)} 12%{transform:translateY(-14px)} 22%{transform:translateY(3px)} }
   .wave { transform-origin: 805px 505px; animation: wave 4s ease-in-out infinite; }
   @keyframes wave { 0%,60%,100%{transform:rotate(0)} 10%,30%{transform:rotate(16deg)} 20%,40%{transform:rotate(-10deg)} 50%{transform:rotate(6deg)} }
   .bubble { opacity:0; animation: bubble 9s cubic-bezier(.3,1.4,.5,1) infinite; }
   @keyframes bubble { 0%{opacity:0;transform:scale(.6)} 4%,30%{opacity:1;transform:scale(1)} 33.3%,100%{opacity:0;transform:scale(.9)} }
-  .blink { animation: blink 2s steps(1) infinite; }
-  @keyframes blink { 50%{opacity:0} }
-  .steam { animation: steam 2.4s ease-in-out infinite; }
-  @keyframes steam { 0%,100%{opacity:.15;transform:translateY(1px)} 50%{opacity:1;transform:translateY(-1px)} }
   @media (prefers-reduced-motion:reduce){ *{animation:none!important} .first{opacity:1} }
 </style>
 <defs>
   <clipPath id="card"><rect width="1200" height="600" rx="24"/></clipPath>
-  <pattern id="dither" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="2" height="2" fill="#0b0b0c"/><rect x="2" y="2" width="2" height="2" fill="#0b0b0c"/></pattern>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.08"/>
+  </pattern>
+  <pattern id="dither" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="2" height="2" fill="#0b0b0c"/><rect x="2" y="2" width="2" height="2" fill="#0b0b0c"/>
+  </pattern>
 </defs>
 <g clip-path="url(#card)">
-  <!-- Vibrant Blue Background -->
+  <!-- Vibrant Blue Background from misheshpatel.vercel.app -->
   <rect width="1200" height="600" fill="#2261e9"/>
-  <!-- Subtly Textured Grid Columns -->
-  <rect x="24" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="120" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="216" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="312" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="408" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="504" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="600" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="696" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="792" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="888" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="984" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="1080" width="1" height="600" fill="#fff" opacity=".07"/>
-  <rect x="1176" width="1" height="600" fill="#fff" opacity=".07"/>
+  <!-- Portfolio bg-grid overlay -->
+  <rect width="1200" height="600" fill="url(#grid)"/>
 
-  <!-- macOS Menu Bar -->
-  <g>
-    <!-- Logo / Smiley -->
-    <rect x="16" y="14" width="30" height="30" rx="15" fill="#fbfbf8"/>
-    <circle cx="27" cy="27" r="1.7" fill="#0b0b0c"/>
-    <circle cx="35" cy="27" r="1.7" fill="#0b0b0c"/>
-    <path d="M26 31.5q5 5 10 0" fill="none" stroke="#0b0b0c" stroke-width="1.8" stroke-linecap="round"/>
-
-    <!-- Workspaces Pill -->
-    <rect x="54" y="14" width="116" height="30" rx="15" fill="#fbfbf8"/>
-    <text x="70" y="34" font-size="14" font-weight="700" fill="#0b0b0c">1</text>
-    <text x="97" y="34" font-size="14" font-weight="700" fill="#0b0b0c">2</text>
-    <text x="125" y="34" font-size="14" font-weight="700" fill="#0b0b0c">3</text>
-    <text x="153" y="34" font-size="14" font-weight="700" fill="#0b0b0c">4</text>
-    <rect fill="#2261e9" x="57" y="17" width="26" height="24" rx="12">
-      <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" values="0 0;0 0;28 0;28 0;56 0;56 0;84 0;84 0;0 0" keyTimes="0;.21;.25;.46;.5;.71;.75;.96;1" calcMode="spline" keySplines="0 0 1 1;.5 0 .2 1;0 0 1 1;.5 0 .2 1;0 0 1 1;.5 0 .2 1;0 0 1 1;.5 0 .2 1"/>
-    </rect>
-
-    <!-- Name Pill -->
-    <rect x="178" y="14" width="138" height="30" rx="15" fill="#fbfbf8"/>
-    <text x="194" y="34" font-size="13" font-weight="700" fill="#0b0b0c">Mishesh Patel</text>
-
-    <!-- Role Pill -->
-    <rect x="324" y="14" width="140" height="30" rx="15" fill="#fbfbf8"/>
-    <text x="338" y="34" font-size="13" font-weight="600" fill="#0b0b0c">AI/ML Developer</text>
-
-    <!-- Coffee Icon with Animated Steam -->
-    <rect x="860" y="14" width="56" height="30" rx="15" fill="#fbfbf8"/>
-    <path class="steam" d="M876 22q3-3 0-6t0-6" fill="none" stroke="#0b0b0c" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M873 24h12v4a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5z M885 25h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2" fill="none" stroke="#0b0b0c" stroke-width="1.6"/>
-    <text x="893" y="34" font-size="12" font-weight="700" fill="#0b0b0c">2</text>
+  <!-- Portfolio Navbar Header -->
+  <g transform="translate(60, 48)">
+    <!-- Name & Title on Left (exact from portfolio: font-bold Mishesh Patel, mt-1 font-normal AI/ML Developer) -->
+    <text x="0" y="24" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">Mishesh Patel</text>
+    <text x="0" y="52" font-size="18" font-weight="400" fill="#ffffff" opacity="0.85" letter-spacing="-0.015em">AI/ML Developer</text>
 
     <!-- Location Pill -->
-    <rect x="924" y="14" width="130" height="30" rx="15" fill="#fbfbf8"/>
-    <circle cx="940" cy="29" r="4" fill="#17b26a"/>
-    <text x="952" y="34" font-size="12" font-weight="700" fill="#0b0b0c">Gujarat, IN</text>
+    <g transform="translate(195, 3)">
+      <rect x="0" y="0" width="138" height="28" rx="14" fill="#ffffff" opacity="0.15"/>
+      <circle cx="16" cy="14" r="4" fill="#17b26a"/>
+      <text x="28" y="19" font-size="12" font-weight="600" fill="#ffffff">Gujarat, India</text>
+    </g>
 
-    <!-- Clock Pill -->
-    <rect x="1062" y="14" width="122" height="30" rx="15" fill="#fbfbf8"/>
-    <text x="1078" y="34" font-size="13" font-weight="700" fill="#0b0b0c">IST</text>
-    <text x="1114" y="34" font-size="13" font-weight="700" fill="#0b0b0c">11</text>
-    <text x="1132" y="33" font-size="13" font-weight="700" fill="#0b0b0c" class="blink">:</text>
-    <text x="1140" y="34" font-size="13" font-weight="700" fill="#0b0b0c">47</text>
+    <!-- Get in touch button on Right (exact from portfolio button) -->
+    <g transform="translate(930, 2)">
+      <rect x="0" y="0" width="150" height="38" rx="19" fill="#ffffff" opacity="0.15" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.35"/>
+      <text x="24" y="24" font-size="14" font-weight="600" fill="#ffffff">Get in touch</text>
+      <!-- Arrow icon -->
+      <path d="M115 15 L125 25 M125 15 L125 25 L115 25" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(2, -3) rotate(-45 120 20)"/>
+    </g>
   </g>
 
-  <!-- Hero Content Left Side -->
-  <g transform="translate(64, 130)">
-    <text x="0" y="0" font-size="17" font-weight="700" fill="#fbfbf8" letter-spacing="2.5" opacity=".9">MISHESH PATEL</text>
-    <text x="0" y="30" font-size="15" font-weight="500" fill="#fbfbf8" letter-spacing="1" opacity=".75">AI/ML &amp; SYSTEMS · GUJARAT, INDIA</text>
-
-    <!-- Big Headline -->
-    <text x="0" y="160" font-size="88" font-weight="800" fill="#fbfbf8" letter-spacing="-2">I build</text>
-    <text x="0" y="255" font-size="84" font-weight="800" fill="#fbfbf8" letter-spacing="-2">intelligent systems</text>
+  <!-- Big Hero Headline (exact from portfolio: "I build intelligence into systems.") -->
+  <g transform="translate(60, 240)">
+    <text x="0" y="80" font-size="78" font-weight="700" fill="#ffffff" letter-spacing="-0.04em">I build intelligence into</text>
     
-    <!-- Animated Bouncing Word "that scale." -->
-    <g transform="translate(0, 350)">
-      <text x="0" y="0" font-size="84" font-weight="800" fill="#fbfbf8" letter-spacing="-2">that </text>
-      <g transform="translate(185, 0)">
-        <text class="bounce" style="animation-delay:0.00s; display:inline-block;" x="0" y="0" font-size="84" font-weight="800" fill="#fbfbf8">s</text>
-        <text class="bounce" style="animation-delay:0.08s; display:inline-block;" x="42" y="0" font-size="84" font-weight="800" fill="#fbfbf8">c</text>
-        <text class="bounce" style="animation-delay:0.16s; display:inline-block;" x="85" y="0" font-size="84" font-weight="800" fill="#fbfbf8">a</text>
-        <text class="bounce" style="animation-delay:0.24s; display:inline-block;" x="130" y="0" font-size="84" font-weight="800" fill="#fbfbf8">l</text>
-        <text class="bounce" style="animation-delay:0.32s; display:inline-block;" x="156" y="0" font-size="84" font-weight="800" fill="#fbfbf8">e</text>
-        <text class="bounce" style="animation-delay:0.40s; display:inline-block;" x="202" y="0" font-size="84" font-weight="800" fill="#bef264">.</text>
-      </g>
+    <g transform="translate(0, 175)">
+      <text x="0" y="0" font-size="82" font-weight="300" fill="#ffffff" opacity="0.95" letter-spacing="-0.04em">systems</text>
+      <!-- Animated Bouncing Dot in accent lime/yellow -->
+      <text class="bounce" style="animation-delay:0.1s; display:inline-block;" x="270" y="0" font-size="82" font-weight="700" fill="#bef264">.</text>
     </g>
+
+    <!-- Subtitle tagline from portfolio -->
+    <text x="0" y="240" font-size="20" font-weight="400" fill="#ffffff" opacity="0.8" letter-spacing="-0.01em">
+      Specialising in machine learning systems, distributed APIs &amp; intelligent software.
+    </text>
   </g>
 
   <!-- Right Side Avatar & Animated Waving Hand -->
@@ -111,23 +70,23 @@
     <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABgCAYAAACDgFV6AAACqklEQVR42u2dPU8DMQxAU0QlJBg68P9/IUMHKiF1KFMkFJHmy3ac3Mt2HNdD7es7x3bCKQiN+/3n8d/Pz+e307Pr3t8/HiGEcL1+Vf2+9/ESGKLjpEVmidTe6yD0YONV+gUvl8/w14kpkfF86/UQikN1HTo6VnEphM5yaEpiJKbkPKnzOBSHznXkLi6FUCuH5si0cmY8v1pcCqFWDtV2Z3Rh7TeBOBRCw9O5d85ptcdxpC7sdaZXYiF0lTi09elcciqEQmioqvmMxplBON/qjVQI9RqHzprRQOhR5vK1M5bWuHF07l46jo6/3b5VSE2fIbm/P94fQrUc6i3vOdulve8HhEo7NP0krPOdUs61GiWnQygO1XXo6PsAodo1pdG4UPr1WvOt1s7EodZz+d5q59EdGu8PodqEtuY/vZLcSuxoDY25PL1NOqSO1szSLBeEeqspWdeQes+nJNWSWXImMyUcattTNepkCJ21CiQXp82uy0vfv/SMgFDvhB59QKj3lXTSvU7Wdf3R6yF0lbWepY6K1Udvlx+EeluNLB0FeHNqa14VQncn1JtDW7v6IDQ433NkthOl6vq9/aYQikN1O0BGO6EhdNV9m7w6VbrzGUJxaFDNb+Z2/4HQ1R0aP8nWOv7s41LWrHUdFIR6dehsl1p1/ZGxX51QrT1LpHr+qctDqE3NaVaHCoTuQmhvf6m0I6XuRxy6K6FSndDSztTKj0LoqoTmiA3JnnjacWRpbSgZewi1iVtbHS2VuYfQ3Qit3RdptM5uVXOC0F0Ilc6baldb6Q8Nm/Y2leJPqThSO78av1Fkm3Z36OgqYKue/l6nQujqhNZmnXKOTFcTz65ZpaRC6C4OrXVk7f8DnbV6BEKPkg8NlflIr71T7Nu0ez7UemcJ6fPsfac0fgEzlXWiks3MeAAAAABJRU5ErkJggg==" x="763" y="416" width="84" height="96"/>
   </g>
 
-  <!-- Interactive Animated Speech Bubbles -->
-  <g class="bubble first" style="animation-delay:0s; transform-origin:860px 262px">
-    <path d="M780 188h98a18 18 0 0 1 18 18v16a18 18 0 0 1-18 18h-6l14 22-34-22h-72a18 18 0 0 1-18-18v-16a18 18 0 0 1 18-18z" fill="url(#dither)" transform="translate(6 6)"/>
-    <path d="M780 188h98a18 18 0 0 1 18 18v16a18 18 0 0 1-18 18h-6l14 22-34-22h-72a18 18 0 0 1-18-18v-16a18 18 0 0 1 18-18z" fill="#fbfbf8"/>
-    <text x="796" y="218" font-size="16" font-weight="700" fill="#0b0b0c">Hey there! 👋</text>
+  <!-- Interactive Speech Bubbles (exact words from misheshpatel.vercel.app mascot) -->
+  <g class="bubble first" style="animation-delay:0s; transform-origin:860px 240px">
+    <path d="M570 166h320a18 18 0 0 1 18 18v22a18 18 0 0 1-18 18h-6l14 22-34-22h-294a18 18 0 0 1-18-18v-22a18 18 0 0 1 18-18z" fill="url(#dither)" transform="translate(6 6)"/>
+    <path d="M570 166h320a18 18 0 0 1 18 18v22a18 18 0 0 1-18 18h-6l14 22-34-22h-294a18 18 0 0 1-18-18v-22a18 18 0 0 1 18-18z" fill="#fbfbf8"/>
+    <text x="590" y="200" font-size="15" font-weight="700" fill="#0b0b0c">Hi, I'm <tspan fill="#2261e9">Mishesh</tspan>. Scroll down to see my work!</text>
   </g>
 
-  <g class="bubble" style="animation-delay:3s; transform-origin:860px 262px">
-    <path d="M680 188h200a18 18 0 0 1 18 18v16a18 18 0 0 1-18 18h-6l14 22-34-22h-174a18 18 0 0 1-18-18v-16a18 18 0 0 1 18-18z" fill="url(#dither)" transform="translate(6 6)"/>
-    <path d="M680 188h200a18 18 0 0 1 18 18v16a18 18 0 0 1-18 18h-6l14 22-34-22h-174a18 18 0 0 1-18-18v-16a18 18 0 0 1 18-18z" fill="#fbfbf8"/>
-    <text x="696" y="218" font-size="16" font-weight="700" fill="#0b0b0c">AI/ML &amp; Systems 🚀</text>
+  <g class="bubble" style="animation-delay:3s; transform-origin:860px 240px">
+    <path d="M640 166h250a18 18 0 0 1 18 18v22a18 18 0 0 1-18 18h-6l14 22-34-22h-224a18 18 0 0 1-18-18v-22a18 18 0 0 1 18-18z" fill="url(#dither)" transform="translate(6 6)"/>
+    <path d="M640 166h250a18 18 0 0 1 18 18v22a18 18 0 0 1-18 18h-6l14 22-34-22h-224a18 18 0 0 1-18-18v-22a18 18 0 0 1 18-18z" fill="#fbfbf8"/>
+    <text x="660" y="200" font-size="15" font-weight="700" fill="#0b0b0c">AI Models &amp; Distributed APIs ⚡</text>
   </g>
 
-  <g class="bubble" style="animation-delay:6s; transform-origin:860px 262px">
-    <path d="M660 188h220a18 18 0 0 1 18 18v16a18 18 0 0 1-18 18h-6l14 22-34-22h-194a18 18 0 0 1-18-18v-16a18 18 0 0 1 18-18z" fill="url(#dither)" transform="translate(6 6)"/>
-    <path d="M660 188h220a18 18 0 0 1 18 18v16a18 18 0 0 1-18 18h-6l14 22-34-22h-194a18 18 0 0 1-18-18v-16a18 18 0 0 1 18-18z" fill="#fbfbf8"/>
-    <text x="676" y="218" font-size="16" font-weight="700" fill="#0b0b0c">Welcome to my profile! ✨</text>
+  <g class="bubble" style="animation-delay:6s; transform-origin:860px 240px">
+    <path d="M610 166h280a18 18 0 0 1 18 18v22a18 18 0 0 1-18 18h-6l14 22-34-22h-254a18 18 0 0 1-18-18v-22a18 18 0 0 1 18-18z" fill="url(#dither)" transform="translate(6 6)"/>
+    <path d="M610 166h280a18 18 0 0 1 18 18v22a18 18 0 0 1-18 18h-6l14 22-34-22h-254a18 18 0 0 1-18-18v-22a18 18 0 0 1 18-18z" fill="#fbfbf8"/>
+    <text x="630" y="200" font-size="15" font-weight="700" fill="#0b0b0c">Building scalable intelligent apps 🚀</text>
   </g>
 </g>
 </svg>

@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Snake
 
 on:
   schedule:
@@ -16,18 +16,14 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Generate snake animation
-        uses: Platane/snk/svg-only@v3
+      - uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: MisheshPatel09
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
+            dist/snake.svg?color_snake=#0b0b0c&color_dots=#ebedf0,#c7d7fa,#8fb0f4,#5585ee,#2261e9
+            dist/snake-dark.svg?palette=github-dark&color_snake=#fbfbf8&color_dots=#161b22,#0f2a66,#1a46a8,#2261e9,#6f9bf5
 
-      - name: Push snake to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist

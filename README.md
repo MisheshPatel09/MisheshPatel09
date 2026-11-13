@@ -39,8 +39,8 @@ AI/ML & Full-Stack developer based in Gujarat, India. By day I build machine lea
 A snake eats my contribution graph every day. It never runs out of food.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MisheshPatel09/MisheshPatel09/output/github-contribution-grid-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/MisheshPatel09/MisheshPatel09/output/github-contribution-grid-snake.svg" width="100%" alt="A snake eating the squares of Mishesh's GitHub contribution graph">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MisheshPatel09/MisheshPatel09/output/snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/MisheshPatel09/MisheshPatel09/output/snake.svg" width="100%" alt="A snake eating the squares of Mishesh's GitHub contribution graph">
 </picture>
 
 <br><br>
